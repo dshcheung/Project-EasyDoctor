@@ -27,6 +27,11 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 
 gem 'wannabe_bool'
+gem "faker"
+
+group :production do
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   # Better Errors replaces the standard Rails error page with a much better and more useful error page.
@@ -36,7 +41,6 @@ group :development, :test do
   # Rails console opens pry
   #> https://github.com/rweng/pry-rails
   gem 'pry-rails'
-  gem "faker"
 
 end
 
